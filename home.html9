@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Content and Style</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #message {
+            font-size: 24px;
+            color: blue;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        function changeContent() {
+            // Change text
+            document.getElementById("message").innerHTML = "Welcome to JavaScript!";
+
+            // Change style
+            document.getElementById("message").style.color = "red";
+            document.getElementById("message").style.fontSize = "30px";
+            document.getElementById("message").style.fontWeight = "bold";
+        }
+    </script>
+</head>
+<body>
+
+    <h2 id="message">Hello, World!</h2>
+
+    <button onclick="changeContent()">
+        Click Here
+    </button>
+
+</body>
+</html>
